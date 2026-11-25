@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maruni English Coach | 子どもの英語レッスン</title>
+  <meta name="description" content="Maruni English Coach は、4歳から12歳のための少人数・マンツーマンの英語レッスンです。オンライン中心。体験レッスンのお問い合わせを受け付けています。">
+  <meta name="theme-color" content="#102824">
+  <meta property="og:title" content="Maruni English Coach">
+  <meta property="og:description" content="Calm English lessons for children ages 4–12. Small groups and one-to-one. Trial inquiries welcome.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@400;500;600;700&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("maruni-lang");
+        if (saved === "en" || saved === "ja") document.documentElement.lang = saved;
+      } catch (e) {}
+      document.title = document.documentElement.lang === "ja"
+        ? "Maruni English Coach | 子どもの英語レッスン"
+        : "Maruni English Coach | English lessons for children";
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Maruni English Coach",
+    "description": "English lessons for children ages 4 to 12. Online, in small groups or one-to-one.",
+    "audience": {
+      "@type": "PeopleAudience",
+      "suggestedMinAge": 4,
+      "suggestedMaxAge": 12
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">
+    <span class="t-en">Skip to content</span>
+    <span class="t-ja">本文へ進む</span>
+  </a>
+
+  <div class="setup" id="setup" hidden>
+    <p>
+      <span class="t-en"><strong>Setup.</strong> Open <code>config.js</code> and add Maruni’s email. Inquiries are delivered there. The first time, open the confirmation link FormSubmit sends.</span>
+      <span class="t-ja"><strong>公開前の設定。</strong> <code>config.js</code> に受け取り用のメールアドレスを入れてください。問い合わせはそこへ届きます。最初の1回だけ、FormSubmit の確認リンクを開いてください。</span>
+    </p>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" translate="no">
+      <span class="mark" aria-hidden="true">丸</span>
+      <span class="word">
+        <strong>Maruni</strong>
+        <small>English Coach</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about"><span class="t-en">About</span><span class="t-ja">紹介</span></a>
+      <a href="#lessons"><span class="t-en">Lessons</span><span class="t-ja">レッスン</span></a>
+      <a href="#approach"><span class="t-en">Approach</span><span class="t-ja">進め方</span></a>
+      <a href="#studio"><span class="t-en">Families</span><span class="t-ja">ご家庭</span></a>
+      <a href="#faq"><span class="t-en">FAQ</span><span class="t-ja">質問</span></a>
+      <a class="btn btn-small nav-cta" href="#inquire"><span class="t-en">Inquire</span><span class="t-ja">問い合わせ</span></a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang" role="group">
+        <span class="sr-only t-en">Language</span>
+        <span class="sr-only t-ja">言語</span>
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="ja" aria-pressed="false">日本語</button>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav">
+        <span class="sr-only t-en">Menu</span>
+        <span class="sr-only t-ja">メニュー</span>
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="t-en">Children’s English studio</span>
+            <span class="t-ja">子ども英語の小さな教室</span>
+          </p>
+          <h1>
+            <span class="t-en">Lessons they<br>look forward to.</span>
+            <span class="t-ja">また来たくなる<br>英語レッスン。</span>
+          </h1>
+          <p class="lead">
+            <span class="t-en">Maruni English Coach is a calm studio for ages 4 to 12. Lessons stay small, speaking comes first, and parents receive a short note after every class.</span>
+            <span class="t-ja">Maruni English Coach は、4歳から12歳のための落ち着いた英語教室です。少人数で、話す時間を大切にします。毎回、保護者の方へ短いフィードバックをお送りします。</span>
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#inquire">
+              <span class="t-en">Request a trial</span>
+              <span class="t-ja">体験を申し込む</span>
+            </a>
+            <a class="btn btn-ghost" href="#lessons">
+              <span class="t-en">View lessons</span>
+              <span class="t-ja">レッスンを見る</span>
+            </a>
+          </div>
+          <ul class="hero-points">
+            <li><span class="t-en">Ages 4–12</span><span class="t-ja">対象 4〜12歳</span></li>
+            <li><span class="t-en">One-to-one or groups of 2–4</span><span class="t-ja">マンツーマン / 2〜4人</span></li>
+            <li><span class="t-en">Online, with Japanese support for parents</span><span class="t-ja">オンライン・保護者連絡は日本語可</span></li>
+          </ul>
+        </div>
+
+        <div class="stage" aria-hidden="true">
+          <div class="stage-card">
+            <header class="stage-bar">
+              <span class="stage-live"><i></i><span class="t-en">In the studio</span><span class="t-ja">レッスン中</span></span>
+              <span class="stage-meta"><span class="t-en">Small group · 45 min</span><span class="t-ja">少人数 · 45分</span></span>
+            </header>
+            <article class="float dialogue">
+              <p class="float-kicker">
+                <span class="t-en">Lesson sample</span>
+                <span class="t-ja">レッスンの一例</span>
+              </p>
+              <p><b>Maruni</b> What did you eat for breakfast?</p>
+              <p><b>Student</b> I ate rice and egg. It was yummy.</p>
+            </article>
+            <article class="float today">
+              <p class="float-kicker">
+                <span class="t-en">Today’s goal</span>
+                <span class="t-ja">今日のゴール</span>
+              </p>
+              <p class="today-goal">
+                <span class="t-en">Tell a small story in four sentences.</span>
+                <span class="t-ja">4文で、小さな話をする。</span>
+              </p>
+            </article>
+            <footer class="stage-foot">
+              <div>
+                <strong>01</strong>
+                <span class="t-en">Listen</span>
+                <span class="t-ja">聞く</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span class="t-en">Speak</span>
+                <span class="t-ja">話す</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span class="t-en">Try again</span>
+                <span class="t-ja">もう一度</span>
+              </div>
+            </footer>
+          </div>
+          <p class="seal">
+            <span class="t-en">Trial lessons</span>
+            <span class="t-ja">体験レッスン</span>
+            <strong class="t-en">Open</strong>
+            <strong class="t-ja">受付中</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Studio facts">
+      <div class="wrap trust-grid">
+        <div>
+          <strong>4–12</strong>
+          <span class="t-en">Years old</span>
+          <span class="t-ja">歳が対象</span>
+        </div>
+        <div>
+          <strong>25 / 45</strong>
+          <span class="t-en">Minute lessons</span>
+          <span class="t-ja">分のレッスン</span>
+        </div>
+        <div>
+          <strong>2–4</strong>
+          <span class="t-en">Children in a group</span>
+          <span class="t-ja">人までの少人数</span>
+        </div>
+        <div>
+          <strong>1:1</strong>
+          <span class="t-en">Also available</span>
+          <span class="t-ja">マンツーマンも可</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">
+            <span class="t-en">About the studio</span>
+            <span class="t-ja">教室について</span>
+          </p>
+          <h2>
+            <span class="t-en">A small circle where English feels safe.</span>
+            <span class="t-ja">安心して話せる、小さな輪。</span>
+          </h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            <span class="t-en">Maru means “circle.” Maruni’s lessons are built like that: a small group, a clear goal, and enough quiet for a child to try a sentence without rushing.</span>
+            <span class="t-ja">「まる」は、円のこと。レッスンもその形です。少人数で、今日のゴールがはっきりしていて、急かされずに一文を試せる時間があります。</span>
+          </p>
+          <p>
+            <span class="t-en">English leads the class. When a child needs the meaning, Japanese is used briefly — never as a substitute for speaking. Notes home to parents are happily written in Japanese.</span>
+            <span class="t-ja">レッスンの中心は英語です。意味が必要なときだけ、短く日本語を使います。保護者の方への連絡は、日本語で大丈夫です。</span>
+          </p>
+          <p>
+            <span class="t-en">There is no invented ranking and no promise of fluency by a certain month. The work is steady: listen, speak, read, and leave each lesson with one thing the child can actually do.</span>
+            <span class="t-ja">順位や「何か月でペラペラ」といった約束はしません。聞く、話す、読む。毎回、お子さんが実際にできることを一つ残します。</span>
+          </p>
+          <ul class="principles">
+            <li>
+              <strong><span class="t-en">Small on purpose</span><span class="t-ja">意図した少人数</span></strong>
+              <span class="t-en">Two to four children, or one child alone.</span>
+              <span class="t-ja">2〜4人、またはマンツーマン。</span>
+            </li>
+            <li>
+              <strong><span class="t-en">One aim a day</span><span class="t-ja">今日の目標は一つ</span></strong>
+              <span class="t-en">A sentence, a story, or a page — not a pile of tasks.</span>
+              <span class="t-ja">一文、一つの話、一ページ。課題を積みません。</span>
+            </li>
+            <li>
+              <strong><span class="t-en">Plain updates</span><span class="t-ja">わかりやすい連絡</span></strong>
+              <span class="t-en">Parents hear what happened, in Japanese if they wish.</span>
+              <span class="t-ja">保護者には、希望があれば日本語で経過をお伝えします。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="lessons" id="lessons">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <span class="t-en">Lessons</span>
+            <span class="t-ja">レッスン</span>
+          </p>
+          <h2>
+            <span class="t-en">Three starting points. The right one depends on the child.</span>
+            <span class="t-ja">三つの入り口。合う場所は、お子さん次第です。</span>
+          </h2>
+          <p class="section-lead">
+            <span class="t-en">Age is a guide, not a gate. A trial is the moment to choose length, pace, and whether a group or a private lesson fits.</span>
+            <span class="t-ja">年齢は目安です。体験のときに、長さ、ペース、グループかマンツーマンかを一緒に決めます。</span>
+          </p>
+        </div>
+        <div class="program-grid">
+          <article class="program">
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M10 16c6-6 22-6 28 0v18c-6-4-22-4-28 0V16Z" stroke="currentColor" stroke-width="1.8"/><path d="M24 14v20" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <p class="age-pill">4–6</p>
+            <h3>
+              <span class="t-en">Little Sprouts</span>
+              <span class="t-ja">リトルスプラウト</span>
+            </h3>
+            <p>
+              <span class="t-en">Sounds, songs, and the words around home and play. Children answer with gestures first, then with short English phrases.</span>
+              <span class="t-ja">音、歌、家や遊びに出てくる言葉。まずは身ぶりで、それから短い英語で返事をします。</span>
+            </p>
+            <ul>
+              <li><span class="t-en">Ear for English sounds</span><span class="t-ja">英語の音に慣れる</span></li>
+              <li><span class="t-en">Songs and first phrases</span><span class="t-ja">歌と最初のフレーズ</span></li>
+              <li><span class="t-en">25-minute lessons</span><span class="t-ja">25分が目安</span></li>
+            </ul>
+          </article>
+          <article class="program">
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M8 14h22a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H18l-8 6v-6H10a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <p class="age-pill">7–9</p>
+            <h3>
+              <span class="t-en">Confident Speakers</span>
+              <span class="t-ja">自信を育てる会話</span>
+            </h3>
+            <p>
+              <span class="t-en">Everyday talk, simple stories, and the chance to describe something the child actually cares about.</span>
+              <span class="t-ja">日常の会話、短い物語、そしてお子さんが本当に好きなことを英語で話す時間です。</span>
+            </p>
+            <ul>
+              <li><span class="t-en">Questions and answers</span><span class="t-ja">質問と返事</span></li>
+              <li><span class="t-en">Show-and-tell</span><span class="t-ja">好きなものの紹介</span></li>
+              <li><span class="t-en">45-minute lessons</span><span class="t-ja">45分が目安</span></li>
+            </ul>
+          </article>
+          <article class="program">
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M14 8h16l8 8v24H14V8Z" stroke="currentColor" stroke-width="1.8"/><path d="M30 8v8h8M18 26h12M18 32h8" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <p class="age-pill">9–12</p>
+            <h3>
+              <span class="t-en">Young Readers</span>
+              <span class="t-ja">読む・書く・発表</span>
+            </h3>
+            <p>
+              <span class="t-en">Reading, short writing, and a little help with school English — plus practice presenting an idea out loud.</span>
+              <span class="t-ja">読むこと、短い作文、学校英語の補助。そして、考えを声に出して伝える練習です。</span>
+            </p>
+            <ul>
+              <li><span class="t-en">Reading in small steps</span><span class="t-ja">少しずつ読む</span></li>
+              <li><span class="t-en">Short writing</span><span class="t-ja">短いライティング</span></li>
+              <li><span class="t-en">45-minute lessons</span><span class="t-ja">45分が目安</span></li>
+            </ul>
+          </article>
+        </div>
+        <p class="section-note">
+          <span class="t-en">Fees depend on age, group size, and schedule. They are shared with a suggested plan after the trial — not as a surprise later.</span>
+          <span class="t-ja">料金は年齢、人数、曜日によって変わります。体験のあと、プランと一緒にご案内します。</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="approach" id="approach">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <span class="t-en">Inside a lesson</span>
+            <span class="t-ja">レッスンの流れ</span>
+          </p>
+          <h2>
+            <span class="t-en">The same gentle shape, every time.</span>
+            <span class="t-ja">毎回、同じやさしい形です。</span>
+          </h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <h3><span class="t-en">Hello</span><span class="t-ja">あいさつ</span></h3>
+            <p><span class="t-en">A familiar opening so the hour starts calmly.</span><span class="t-ja">いつもの始まりで、気持ちを整えます。</span></p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3><span class="t-en">One goal</span><span class="t-ja">今日の一つ</span></h3>
+            <p><span class="t-en">A single thing to be able to say or read today.</span><span class="t-ja">今日できるようになることを、一つだけ。</span></p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3><span class="t-en">Speak it</span><span class="t-ja">声に出す</span></h3>
+            <p><span class="t-en">Practice out loud, with time to think.</span><span class="t-ja">考える時間をとって、声に出します。</span></p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3><span class="t-en">Story or game</span><span class="t-ja">物語か遊び</span></h3>
+            <p><span class="t-en">The goal shows up again inside something enjoyable.</span><span class="t-ja">楽しく使える形で、もう一度出会います。</span></p>
+          </li>
+          <li>
+            <span>05</span>
+            <h3><span class="t-en">Note home</span><span class="t-ja">家庭へ一言</span></h3>
+            <p><span class="t-en">Parents hear what went well and what is next.</span><span class="t-ja">できたことと、次にすることをお伝えします。</span></p>
+          </li>
+        </ol>
+
+        <div class="promises">
+          <article>
+            <h3><span class="t-en">Correction without shame</span><span class="t-ja">恥ずかしい直し方はしない</span></h3>
+            <p><span class="t-en">Mistakes are part of speaking. Maruni models the phrase again and invites a second try.</span><span class="t-ja">間違いは、話すことの一部です。正しい言い方をもう一度聞いて、もう一回やってみます。</span></p>
+          </article>
+          <article>
+            <h3><span class="t-en">Enough turns to talk</span><span class="t-ja">話す順番が回ってくる</span></h3>
+            <p><span class="t-en">Groups stay at two to four children so a quiet student is not lost behind faster voices.</span><span class="t-ja">グループは2〜4人。控えめなお子さんの順番が、速い子の後ろに隠れません。</span></p>
+          </article>
+          <article>
+            <h3><span class="t-en">Parents are included</span><span class="t-ja">保護者も仲間です</span></h3>
+            <p><span class="t-en">You do not need perfect English to follow the plan. Questions about progress are welcome in Japanese.</span><span class="t-ja">保護者の方が英語を完璧に話す必要はありません。進み具合の相談は日本語でどうぞ。</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio" id="studio">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <span class="t-en">For families</span>
+            <span class="t-ja">ご家庭へ</span>
+          </p>
+          <h2>
+            <span class="t-en">Clear expectations, before the first hello.</span>
+            <span class="t-ja">最初のあいさつより前に、はっきりした約束。</span>
+          </h2>
+        </div>
+        <div class="studio-grid">
+          <article>
+            <p class="studio-index">01</p>
+            <h3><span class="t-en">A simple online setup</span><span class="t-ja">オンラインは、シンプルに</span></h3>
+            <p>
+              <span class="t-en">A laptop or tablet, a quiet corner, and a steady connection. Headphones help. For the youngest children, a parent nearby for the first few lessons is often enough.</span>
+              <span class="t-ja">パソコンかタブレット、静かな場所、安定した通信。ヘッドホンがあると聞き取りやすいです。小さなお子さんは、初めの数回、保護者の方がそばにいると十分です。</span>
+            </p>
+          </article>
+          <article>
+            <p class="studio-index">02</p>
+            <h3><span class="t-en">A note after every class</span><span class="t-ja">毎回、短い連絡</span></h3>
+            <p>
+              <span class="t-en">You receive a short message: what your child could do today, and one thing worth trying at home. No score. No ranking.</span>
+              <span class="t-ja">今日できたことと、家で試せること一つを短くお送りします。点数も順位もありません。</span>
+            </p>
+          </article>
+          <article>
+            <p class="studio-index">03</p>
+            <h3><span class="t-en">A weekly pace</span><span class="t-ja">週に一度のペース</span></h3>
+            <p>
+              <span class="t-en">Lessons are usually once a week. If a week is missed, we agree a new time. Two lessons are not stacked into one tired hour.</span>
+              <span class="t-ja">レッスンは週1回が基本です。休んだ週は、別の時間を相談します。疲れた1回に、2回分を詰め込みません。</span>
+            </p>
+          </article>
+        </div>
+
+        <div class="fit">
+          <div>
+            <h3><span class="t-en">A good fit</span><span class="t-ja">向いているご家庭</span></h3>
+            <ul>
+              <li><span class="t-en">You want speaking practice in a small, calm class.</span><span class="t-ja">少人数で、落ち着いて話す練習をさせたい。</span></li>
+              <li><span class="t-en">You would like honest updates, including in Japanese.</span><span class="t-ja">日本語を含め、率直な経過を知りたい。</span></li>
+              <li><span class="t-en">Your child is between 4 and 12, new to English or already studying.</span><span class="t-ja">お子さんは4〜12歳。英語が初めてでも、学習中でも。</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3><span class="t-en">A different kind of class</span><span class="t-ja">ここではないこと</span></h3>
+            <ul>
+              <li><span class="t-en">Not a large classroom or a cram-school timetable.</span><span class="t-ja">大人数の教室でも、塾のような時間割でもありません。</span></li>
+              <li><span class="t-en">Not a promise of fluency by a certain month.</span><span class="t-ja">「何か月で話せる」という約束はしません。</span></li>
+              <li><span class="t-en">Not test drilling as the main work of the lesson.</span><span class="t-ja">試験対策だけを中心にはしません。</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="sample-note">
+          <figcaption>
+            <span class="t-en">Example of a note home</span>
+            <span class="t-ja">家庭への連絡の例</span>
+          </figcaption>
+          <blockquote>
+            <p>
+              <span class="t-en">Today Hana told a four-sentence story about breakfast. She needed a moment before “because,” then used it once on her own. Next time we will use it in a second story. At home, one question is enough: “What did you eat?”</span>
+              <span class="t-ja">今日、Hana さんは朝ごはんの話を4文で話しました。「because」の前に少し時間が必要でしたが、一度は自分で使えました。次回は、別の話でもう一度使います。おうちでは、「What did you eat?」の質問一つで十分です。</span>
+            </p>
+          </blockquote>
+          <p class="sample-meta">
+            <span class="t-en">A sample of the format — not a real student.</span>
+            <span class="t-ja">形式の見本です。実在のお子さんではありません。</span>
+          </p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="eyebrow">
+            <span class="t-en">Questions</span>
+            <span class="t-ja">よくある質問</span>
+          </p>
+          <h2>
+            <span class="t-en">Before you write.</span>
+            <span class="t-ja">送る前に、こちらを。</span>
+          </h2>
+          <p class="section-lead">
+            <span class="t-en">If your question is not here, the inquiry form is the right place. A real reply is better than a guess on a website.</span>
+            <span class="t-ja">ここにないことは、フォームからどうぞ。サイトで推測するより、直接お返事します。</span>
+          </p>
+        </div>
+        <div class="accordion">
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a1" id="q1">
+                <span class="t-en">Are lessons online or in person?</span>
+                <span class="t-ja">オンラインですか。対面ですか。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a1" role="region" aria-labelledby="q1" hidden>
+              <p><span class="t-en">Online is the usual way. In-person lessons are sometimes possible after we talk about place and time. Mention your hope in the form.</span><span class="t-ja">通常はオンラインです。対面は、場所と時間を伺ったうえで調整できる場合のみお返事します。ご希望をフォームに書いてください。</span></p>
+            </div>
+          </div>
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a2" id="q2">
+                <span class="t-en">How long is a lesson?</span>
+                <span class="t-ja">一回何分ですか。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a2" role="region" aria-labelledby="q2" hidden>
+              <p><span class="t-en">Usually 25 minutes for ages 4–6, and 45 minutes from about age 7. The trial is where we confirm what the child can enjoy.</span><span class="t-ja">目安は、4〜6歳が25分、7歳くらいから45分です。体験のときに、お子さんが楽しめる長さを確認します。</span></p>
+            </div>
+          </div>
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a3" id="q3">
+                <span class="t-en">Does a parent need to sit in?</span>
+                <span class="t-ja">保護者の同席は必要ですか。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a3" role="region" aria-labelledby="q3" hidden>
+              <p><span class="t-en">It is not required. Younger children are often more at ease if a parent is nearby for the first few lessons.</span><span class="t-ja">必須ではありません。小さいお子さんは、初めの数回、保護者の方がそばにいると安心なことが多いです。</span></p>
+            </div>
+          </div>
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a4" id="q4">
+                <span class="t-en">What about materials and fees?</span>
+                <span class="t-ja">教材と料金は。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a4" role="region" aria-labelledby="q4" hidden>
+              <p><span class="t-en">Materials used in the lesson are included. If something needs to be bought, you will hear about it beforehand. Fees are quoted with the plan, after a trial, because they change with age, group size, and schedule.</span><span class="t-ja">レッスンで使う素材は含まれます。別途購入が必要なときは、事前にお伝えします。料金は年齢・人数・曜日で変わるため、体験のあとプランと一緒にご案内します。</span></p>
+            </div>
+          </div>
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a5" id="q5">
+                <span class="t-en">My child is brand new to English. Is that all right?</span>
+                <span class="t-ja">英語が初めてでも大丈夫ですか。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a5" role="region" aria-labelledby="q5" hidden>
+              <p><span class="t-en">Yes. Beginners start with sounds and very short phrases. Children who already study English start from what they can say, not from a level name on a textbook.</span><span class="t-ja">大丈夫です。初めてのお子さんは音ととても短い表現から。すでに学んでいるお子さんは、教科書の級ではなく、今話せることから始めます。</span></p>
+            </div>
+          </div>
+          <div class="acc">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="a6" id="q6">
+                <span class="t-en">Will you only use English?</span>
+                <span class="t-ja">レッスンは英語だけですか。</span>
+                <i aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="a6" role="region" aria-labelledby="q6" hidden>
+              <p><span class="t-en">Speaking practice is in English. Japanese steps in only to unlock meaning, then the class returns to English. Parent messages can be in Japanese.</span><span class="t-ja">話す練習は英語です。意味がつかめていないときだけ日本語で補助し、すぐ英語に戻します。保護者への連絡は日本語で大丈夫です。</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquire" id="inquire">
+      <div class="wrap inquire-grid">
+        <div class="inquire-copy">
+          <p class="eyebrow eyebrow-light">
+            <span class="t-en">Inquiry</span>
+            <span class="t-ja">お問い合わせ</span>
+          </p>
+          <h2>
+            <span class="t-en">Tell Maruni about your child.</span>
+            <span class="t-ja">お子さんのことを、教えてください。</span>
+          </h2>
+          <p>
+            <span class="t-en">Share a few details and a good time to talk. You will get a reply by email about a trial. Nothing is booked until you agree.</span>
+            <span class="t-ja">いくつか教えてください。体験について、メールでご連絡します。ご納得いただくまで、レッスンは確定しません。</span>
+          </p>
+          <ol class="inquire-steps">
+            <li>
+              <span>1</span>
+              <p><span class="t-en">Send this form.</span><span class="t-ja">このフォームを送る。</span></p>
+            </li>
+            <li>
+              <span>2</span>
+              <p><span class="t-en">Receive possible trial times by email.</span><span class="t-ja">体験できる時間をメールで受け取る。</span></p>
+            </li>
+            <li>
+              <span>3</span>
+              <p><span class="t-en">Meet once, then decide together.</span><span class="t-ja">一度会って、一緒に決める。</span></p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="form-card">
+          <form id="inquiry-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="parent-name"><span class="t-en">Parent’s name</span><span class="t-ja">保護者のお名前</span></label>
+                <input id="parent-name" name="parent_name" type="text" required autocomplete="name" maxlength="80" data-ph-en="Your name" data-ph-ja="お名前">
+                <p class="err" hidden><span class="t-en">Please enter your name.</span><span class="t-ja">お名前を入力してください。</span></p>
+              </div>
+              <div class="field">
+                <label for="email"><span class="t-en">Email</span><span class="t-ja">メール</span></label>
+                <input id="email" name="email" type="email" required autocomplete="email" maxlength="120" data-ph-en="you@example.com" data-ph-ja="you@example.com">
+                <p class="err" hidden><span class="t-en">Please enter a valid email.</span><span class="t-ja">正しいメールアドレスを入力してください。</span></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="phone"><span class="t-en">Phone <em>(optional)</em></span><span class="t-ja">電話 <em>（任意）</em></span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" data-ph-en="Phone number" data-ph-ja="電話番号">
+              </div>
+              <div class="field">
+                <label for="line"><span class="t-en">LINE ID <em>(optional)</em></span><span class="t-ja">LINE ID <em>（任意）</em></span></label>
+                <input id="line" name="line_id" type="text" maxlength="60" data-ph-en="If you prefer LINE" data-ph-ja="LINEをご希望の場合">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="child-name"><span class="t-en">Child’s first name</span><span class="t-ja">お子さんの下の名前</span></label>
+                <input id="child-name" name="child_first_name" type="text" required maxlength="40" data-ph-en="First name only" data-ph-ja="下の名前だけで大丈夫です">
+                <p class="err" hidden><span class="t-en">Please enter a first name.</span><span class="t-ja">下の名前を入力してください。</span></p>
+              </div>
+              <div class="field">
+                <label for="age"><span class="t-en">Age</span><span class="t-ja">年齢</span></label>
+                <select id="age" name="child_age" required>
+                  <option value="" data-en="Select age" data-ja="年齢を選択">年齢を選択</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <p class="err" hidden><span class="t-en">Please select an age.</span><span class="t-ja">年齢を選択してください。</span></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="lesson-type"><span class="t-en">What are you hoping for?</span><span class="t-ja">ご希望</span></label>
+                <select id="lesson-type" name="lesson_type" required>
+                  <option value="" data-en="Select one" data-ja="選択してください">選択してください</option>
+                  <option value="Trial lesson" data-en="Trial lesson" data-ja="体験レッスン">体験レッスン</option>
+                  <option value="One-to-one" data-en="One-to-one lessons" data-ja="マンツーマン">マンツーマン</option>
+                  <option value="Small group" data-en="Small group (2–4)" data-ja="少人数（2〜4人）">少人数（2〜4人）</option>
+                  <option value="Not sure" data-en="Not sure yet" data-ja="まだ決めていない">まだ決めていない</option>
+                </select>
+                <p class="err" hidden><span class="t-en">Please choose one.</span><span class="t-ja">一つ選んでください。</span></p>
+              </div>
+              <div class="field">
+                <label for="time"><span class="t-en">Preferred time</span><span class="t-ja">希望の時間帯</span></label>
+                <select id="time" name="preferred_time" required>
+                  <option value="" data-en="Select one" data-ja="選択してください">選択してください</option>
+                  <option value="Weekday after school" data-en="Weekday after school" data-ja="平日の放課後">平日の放課後</option>
+                  <option value="Weekend morning" data-en="Weekend morning" data-ja="週末の午前">週末の午前</option>
+                  <option value="Weekend afternoon" data-en="Weekend afternoon" data-ja="週末の午後">週末の午後</option>
+                  <option value="Written in message" data-en="I will write it in the message" data-ja="メッセージに書きます">メッセージに書きます</option>
+                </select>
+                <p class="err" hidden><span class="t-en">Please choose a time.</span><span class="t-ja">時間帯を選んでください。</span></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message"><span class="t-en">Message</span><span class="t-ja">メッセージ</span></label>
+              <textarea id="message" name="message" required maxlength="2000" rows="5" data-ph-en="English experience, days that work, and anything Maruni should know." data-ph-ja="英語の経験、都合のよい曜日、伝えておきたいことがあればどうぞ。"></textarea>
+              <p class="err" hidden><span class="t-en">Please write a short message.</span><span class="t-ja">メッセージを入力してください。</span></p>
+            </div>
+            <div class="field check">
+              <input id="consent" name="consent" type="checkbox" value="yes" required>
+              <label for="consent">
+                <span class="t-en">You may contact me about this inquiry. Please use my details only for that reply.</span>
+                <span class="t-ja">この問い合わせへの返信のため、連絡することに同意します。記入した内容は、そのためにだけ使ってください。</span>
+              </label>
+              <p class="err" hidden><span class="t-en">Please tick this box so Maruni can reply.</span><span class="t-ja">返信のために、チェックをお願いします。</span></p>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label>Company <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <p class="form-alert" id="form-alert" hidden></p>
+            <button class="btn btn-full" type="submit" id="submit-btn">
+              <span class="t-en">Send inquiry</span>
+              <span class="t-ja">問い合わせを送る</span>
+            </button>
+            <p class="fine">
+              <span class="t-en">A child’s first name and age are enough. Please don’t include a school name, address, or other sensitive details. Messages are delivered by email through FormSubmit.</span>
+              <span class="t-ja">お子さんの下の名前と年齢で十分です。学校名や住所など、機微な情報は書かないでください。メッセージは FormSubmit を通してメールで届きます。</span>
+            </p>
+          </form>
+
+          <div class="thanks" id="thanks" hidden>
+            <p class="eyebrow">
+              <span class="t-en">Sent</span>
+              <span class="t-ja">送信しました</span>
+            </p>
+            <h3>
+              <span class="t-en">Thank you. Please watch your inbox.</span>
+              <span class="t-ja">ありがとうございます。受信箱をご確認ください。</span>
+            </h3>
+            <p>
+              <span class="t-en">Maruni will reply to the email address you entered. If you do not see a message within a few days, check the spam folder.</span>
+              <span class="t-ja">ご記入のメールアドレスへご連絡します。数日たっても届かない場合は、迷惑メールもご覧ください。</span>
+            </p>
+            <button type="button" class="btn btn-ghost" id="another">
+              <span class="t-en">Send another inquiry</span>
+              <span class="t-ja">別の問い合わせを送る</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div>
+        <p class="logo footer-logo" translate="no">
+          <span class="mark" aria-hidden="true">丸</span>
+          <span class="word"><strong>Maruni</strong><small>English Coach</small></span>
+        </p>
+        <p class="footer-line">
+          <span class="t-en">A small English studio for children ages 4–12. Online lessons, with notes home in Japanese when you prefer.</span>
+          <span class="t-ja">4歳から12歳のための、小さな英語教室。オンラインが中心で、ご希望があれば連絡は日本語です。</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label"><span class="t-en">Studio</span><span class="t-ja">教室</span></p>
+        <a href="#about"><span class="t-en">About</span><span class="t-ja">紹介</span></a>
+        <a href="#lessons"><span class="t-en">Lessons</span><span class="t-ja">レッスン</span></a>
+        <a href="#approach"><span class="t-en">Approach</span><span class="t-ja">進め方</span></a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label"><span class="t-en">Visit</span><span class="t-ja">案内</span></p>
+        <a href="#studio"><span class="t-en">For families</span><span class="t-ja">ご家庭へ</span></a>
+        <a href="#faq"><span class="t-en">Questions</span><span class="t-ja">質問</span></a>
+        <a href="#inquire"><span class="t-en">Request a trial</span><span class="t-ja">体験を申し込む</span></a>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p class="copy">© <span id="year">2026</span> Maruni English Coach</p>
+      <p class="copy">
+        <span class="t-en">Ages 4–12 · Online · Small groups &amp; one-to-one</span>
+        <span class="t-ja">対象 4〜12歳 · オンライン · 少人数とマンツーマン</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
